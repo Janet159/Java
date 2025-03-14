@@ -22,6 +22,13 @@ public class Student {
 		major = "전공없음";
 	}
 	
+	public Student(String name, int age) {
+		this.name = name;
+		this.age = age;
+		stdNo = "00000000";
+		major = "전공없음";
+	}
+
 	// TODO: 매개변수가 있는 생성자
 	public Student(String name, int age, String stdNo, String major) {
 		this.name = name;
@@ -48,4 +55,23 @@ public class Student {
 		//average = (score1 + score2) / 2.0;	
 		return average;
 	}
+	public double getAverage(int score1, int score2,int score3) {
+		double average = 0.0;
+		average = (double)(score1 + score2 +score3) / 3;
+		//average = (score1 + score2) / 3.0;	
+		return average;
+	}
+	public double getAverage(int[] scores) {
+		double average = 0.0;
+//		for (int i = 0; i < array.length; i++) {
+//			sum += scores[i];
+//		}
+		int sum = 0;
+		for (int score : scores) {
+			sum += score;
+		}
+		average = (double)sum / scores.length;
+		return average;
+	}
 }
+
