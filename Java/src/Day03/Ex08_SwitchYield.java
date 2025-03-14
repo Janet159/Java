@@ -27,7 +27,7 @@ public class Ex08_SwitchYield {
 		
 		default ->{
 			System.out.println("별 2개");
-			//블록으 ㅣ실행문이 여러 줄인 경우 yield 필수
+			//블록의 실행문이 여러 줄인 경우 yield 필수
 			// yield 반환값;
 			yield "**";
 		}
