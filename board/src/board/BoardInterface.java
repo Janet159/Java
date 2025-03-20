@@ -10,7 +10,7 @@ package board;
 public interface BoardInterface {
 	
 		// 게시글 최대 개수
-		int MAX_COUNT = 10;
+		int MAX_COUNT = 10;		//인터페이스에 선언된건 사실상 상수임(final이 생략)
 		/** 
 		 * 데이터 등록
 		 * -제목, 작성자, 내용이 포함된 객체를 전달받아,
