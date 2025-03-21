@@ -11,9 +11,18 @@ public class Main {
 			System.out.print("*");
 		}
 
-		System.out.print("*");
+		System.out.println();
+		
+		for (int i = 0; i < a-2; i++) {
+			
+			System.out.print("*");
+			for (int j = 0; j < a-2; j++) {
+				System.out.print(" ");
+			}
+			System.out.print("*");
+			System.out.println();
+		}
 
-		System.out.print("*");
 		
 		
 		for (int k = 1; k <= a; k++) {
