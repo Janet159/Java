@@ -1,4 +1,4 @@
-package Day12.Collection.Comparable;
+package Day12.Compare.Comparable;
 
 import java.util.ArrayList;
 import java.util.Collections;
