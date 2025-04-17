@@ -58,13 +58,17 @@ public class Student implements Comparable<Student>{
 
 	@Override
 	public int compareTo(Student o) {
-		int result = Integer.compare(o.getScore(), this.getScore());
-		
-		if (result == 0) {
-	            result = Integer.compare(this.getNo(), o.getNo());
-	        }
-	        
-	        return result;
+		if(this.score > o.score)
+			return -1;
+		else if(this.score < o.score)
+			return 1;
+		else
+			if(this.no > o.no)
+				return 1;
+			else if(this.no < o.no)
+				return -1;
+			else
+				return 0;
 	}
 	
 }

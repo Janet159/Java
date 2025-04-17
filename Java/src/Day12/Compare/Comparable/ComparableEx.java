@@ -40,7 +40,7 @@ class Book implements Comparable<Book>{
 		
 		//두 가격을 비교하여, 비교기준에 따라 리턴해보세요.
 		// 방법 1
-		if(thisPrice> comPrice)
+		if(thisPrice > comPrice)
 			return 1;
 		else if(thisPrice<comPrice)
 			return -1;
