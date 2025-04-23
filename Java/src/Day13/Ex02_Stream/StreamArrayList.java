@@ -6,8 +6,10 @@ import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 class Product{
 	String name;
@@ -41,6 +43,8 @@ public class StreamArrayList {
 		System.out.println();
 		
 		//메소드 참조 :: 로 작성
+		Product product = new Product();
+		
 		productList.stream()
 		.map(Product::getName)
 		.forEach(System.out::println);
